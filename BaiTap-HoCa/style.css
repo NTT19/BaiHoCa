@@ -1,0 +1,471 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.back::after, .left::after, .right::after, .front::after{
+    content: "";
+    width: 100%;
+    height: 65%;
+    background: linear-gradient(#a3dff9, #04658e);
+    position: absolute;
+    bottom: 0;
+}
+
+.right::after{
+    opacity: 0.2;
+}
+
+.front::after{
+    opacity: 0.1;
+}
+
+.back, .left, .bottom, .right, .front{
+    border: 5px solid rgb(104, 119, 125);
+}
+
+.back, .left, .bottom{
+    background-color: #f1f1f1;
+}
+.back{
+    left: 84px;
+    width: 912px;
+    height: 216px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+ 
+.left{  
+    width: 80px;
+    height: 200px;
+    transform: skewY(-45deg);
+    position: absolute;
+    left: 0;
+    top: 39px;
+}
+
+.bottom{
+    width: 920px;
+    height: 84px;
+    transform: skewX(-45deg);
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+}
+
+.right{
+    width: 80px;
+    height: 210px;
+    transform: skewY(-45deg);
+    position: absolute;
+    right: 0;
+    bottom: 39px;
+}
+
+.front{
+    width: 906px;
+    height: 225px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 83px;
+}
+
+.sand{
+    width: 920px;
+    height: 79px;
+    background: linear-gradient(#e6cfa8, #f1e5cb, #e6cfa8);
+    position: absolute;
+    bottom: 0;
+    left: 31px;
+    transform: skewX(-45deg);
+    border-bottom: 10px solid #dec090;
+    border-right: 10px solid #dec090;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 3) inset;
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fish {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim 20s linear infinite;
+}
+
+
+@keyframes swim {
+    0% {
+        transform: translateX(0) scaleX(1);
+    }
+    49.9% {
+        transform: translateX(calc(50vw - 100px)) scaleX(1);
+    }
+    50% {
+        transform: translateX(calc(50vw - 100px)) scaleX(-1);
+    }
+    99.9% {
+        transform: translateX(0) scaleX(-1);
+    }
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+.fish2 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim2 15s linear infinite;
+    top: 180px;
+    right: 0;
+    transform: rotate(0deg);
+}
+
+@keyframes swim2 {
+    0% {
+        transform: translatex(0) scalex(1);
+    }
+    49.9% {
+        transform: translatex(calc(-75vw - 100px)) scalex(1);
+    }
+    50% {
+        transform: translateX(calc(-75vw - 100px)) scaleX(-1);
+    }
+    99.9% {
+        transform: translateX(0) scaleX(-1);
+    }
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+.fish3 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim3 20s linear infinite;
+    /* top: 300px; */
+    margin-right: 700px;
+    bottom: 0;   
+    transform: rotate(0deg);
+}
+
+@keyframes swim3 {
+    0% {
+        transform: translatex(0) scalex(1);
+    }
+    49.9% {
+        transform: translatey(calc(-30vw - 100px)) scaley(1);
+    }
+    50% {
+        transform: translatey(calc(-30vw - 100px)) scaley(1);
+    }
+    99.9% {
+        transform: translatey(0) scaley(1);
+    }
+    100% {
+        transform: translatey(0) scaley(1);
+    }
+}
+
+
+.fish4 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim4 20s linear infinite;
+    left: 5px;
+    bottom: 0;
+    transform: rotate(0deg);
+}
+
+@keyframes swim4 {
+    0% {
+        transform: translateX(0) scaleX(1);
+    }
+    49.9% {
+        transform: translateX(calc(85vw - 100px)) scaleX(1);
+    }
+    50% {
+        transform: translateX(calc(85vw - 100px)) scaleX(-1);
+    }
+    99.9% {
+        transform: translateX(0) scaleX(-1);
+    }
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+
+.fish5 {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    animation: swim5 20s linear infinite;
+    left: 5px;
+    bottom: 0;
+    transform: rotate(0deg);
+}
+
+@keyframes swim5 {
+    0% {
+        transform: translateX(0) scaleX(1);
+    }
+    49.9% {
+        transform: translateX(calc(85vw - 100px)) scaleX(1);
+    }
+    50% {
+        transform: translateX(calc(85vw - 100px)) scaleX(-1);
+    }
+    99.9% {
+        transform: translateX(0) scaleX(-1);
+    }
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+
+.fish6 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim6 25s linear infinite;
+    top: 600px;
+    right: 0;
+    transform: rotate(0deg);
+}
+
+@keyframes swim6 {
+    0% {
+        transform: translatex(0) scalex(1);
+    }
+    49.9% {
+        transform: translatex(calc(-75vw - 100px)) scalex(1);
+    }
+    50% {
+        transform: translateX(calc(-75vw - 100px)) scaleX(-1);
+    }
+    99.9% {
+        transform: translateX(0) scaleX(-1);
+    }
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+.fish7 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim7 35s linear infinite;
+    top: 60px;
+    right: 0;
+    transform: rotate(0deg);
+}
+
+@keyframes swim7 {
+    0% {
+        transform: translatex(0) scalex(1);
+    }
+    49.9% {
+        transform: translatex(calc(-75vw - 100px)) scalex(1);
+    }
+    50% {
+        transform: translateX(calc(-75vw - 100px)) scaleX(-1);
+    }
+    99.9% {
+        transform: translateX(0) scaleX(-1);
+    }
+    100% {
+        transform: translateX(0) scaleX(1);
+    }
+}
+
+.fish8 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim8 35s linear infinite;
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg);
+}
+
+.fish9 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    animation: swim9 35s linear infinite;
+    bottom: 120px;
+    left: 25px;
+    transform: rotate(-10deg);
+}
+
+.fish10 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    animation: swim9 35s linear infinite;
+    top: 750px;
+    right: 150px;
+    transform: rotate(10deg);
+}
+
+.fish11 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation: swim9 35s linear infinite;
+    top: 700px;
+    left: 0;
+    transform: rotate(10deg);
+}
+
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Place bubbles above the fish */
+}
+
+.bubble {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: bubble 5s infinite;
+    animation-timing-function: ease-in;
+}
+
+.bubble:nth-child(2) {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    animation-duration: 4s;
+    left: 7%;
+}
+
+.bubble:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    animation-duration: 6s;
+    left: 40%;
+}
+
+.bubble:nth-child(4) {
+    width: 10px;
+    height: 10px;
+    animation-duration: 7s;
+    left: 60%;
+}
+
+.bubble:nth-child(5) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 3s;
+    left: 70%;
+}
+
+.bubble:nth-child(6) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 8s;
+    left: 90%;
+}
+
+.bubble:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 5s;
+    left: 55%;
+}
+
+.bubble:nth-child(8) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 9s;
+    left: 35%;
+}
+
+.bubble:nth-child(9) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 4s;
+    left: 50%;
+}
+
+.bubble:nth-child(10) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 6s;
+    left: 60%;
+}
+
+.bubble:nth-child(11) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 6s;
+    left: 4%;
+}
+
+.bubble:nth-child(12) {
+    width: 30px;
+    height: 30px;
+    animation-duration: 6s;
+    left: 60%;
+}
+
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-700px);
+        opacity: 0;
+    }
+}
+
+
+.music {
+    position: absolute;
+    top: 1000px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f1c40f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.music:hover {
+    background-color: #d4ac0d;
+}
+
